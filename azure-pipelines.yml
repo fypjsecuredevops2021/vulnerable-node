@@ -27,7 +27,6 @@ steps:
     --repository fypjsecuredevops2021/vulnerable-node \
     --github-url https://github.com \
     --github-auth $GitHub Token \
-    --config-file .github/codeql/codeql-config.yml 
      displayName: 'Initialize CodeQL Executable and create a CodeQL database'
 
 - script: |
