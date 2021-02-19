@@ -23,12 +23,12 @@ steps:
   displayName: 'Get latest CodeQL package. Install on Agent.'
 
 - script: |
-        ./codeql-runner-linux init \
-        --repository fypjsecuredevops2021/vulnerable-node \
-        --github-url https://github.com \
-        --github-auth $GITHUB_TOKEN \
-        --config-file .github/codeql/codeql-config.yml 
-        displayName: 'Initialize CodeQL Executable and create a CodeQL database'
+    ./codeql-runner-linux init \
+    --repository fypjsecuredevops2021/vulnerable-node \
+    --github-url https://github.com \
+    --github-auth $GITHUB_TOKEN \
+    --config-file .github/codeql/codeql-config.yml 
+     displayName: 'Initialize CodeQL Executable and create a CodeQL database'
 
 - script: |
     ./codeql-runner-linux analyze \
